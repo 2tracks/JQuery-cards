@@ -51,12 +51,13 @@ $(document).ready(function() {
 
     $("p").css("font-family", "Tahoma"); */
 
-    $('nav-item').on(click, function(){
+    $('.stream-nav').on('click', function(){
         var streamCards = '.card';
-        var thisStreamCard = '.'+ this.id;
+        var thisStreamCard = '.' + this.id + '-card';
 
-        $('streamCards').removeClass('highlight_stream');
-        $('thisStreamCard').addClass('highlight_stream');
+        $(streamCards).removeClass('highlight_stream');
+        $(thisStreamCard).addClass('highlight_stream');
     });
+
 
 }); 
